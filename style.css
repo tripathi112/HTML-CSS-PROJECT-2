@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Red Rose", sans-serif;
+}
+body{
+    background-image: url("./assets/pexels-maxyne-barcel-10402282\ 1.png");
+    background-size: cover;
+}
+.container{
+    background-color: rgba(11,11,43,0.676);
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.navbar{
+    display: flex;
+    position: absolute;
+    top:30px ;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+}
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ffa500;
+    width: 100%;
+    gap: 30px;
+}
+.button-small{
+    height: 35px;
+    width: 90px;
+    background-color: rgb(241, 70, 70);
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.hero{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 500px;
+    align-items: center;
+}
+.hero-heading{
+    text-align: center;
+    font-size: 75px;
+    color: #e3a229;
+    font-family: "Dela Gothic One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 5%;
+}
+.button-large{
+
+    height: 40px;
+    width: 250px;
+    background-color:rgb(241, 70, 70) ;
+    color: white;
+    font-size: 25px;
+    border: none;
+    position: absolute;
+    left: 40%;
+   margin-top: 5%;
+}
+.bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.hero-logo{
+    height: 120px;
+    width: 120px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets (<= 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        top: 20px;
+    }
+
+    .list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-heading {
+        font-size: 40px;
+    }
+
+    .button-large {
+        width: 200px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile Devices (<= 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        top: 10px;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        height: 40px;
+        width: 80px;
+    }
+
+    .hero {
+        top: 20%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .hero-heading {
+        font-size: 30px;
+    }
+
+    .button-large {
+        width: 180px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .button-small {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .hero-logo {
+        height: 80px;
+        width: 80px;
+    }
+}
